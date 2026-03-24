@@ -26,18 +26,21 @@ h2 {
     margin-bottom: 20px;
 }
 
-input, textarea {
+input {
     width: 100%;
     padding: 10px;
     margin-bottom: 12px;
     border-radius: 10px;
     border: 1px solid #ccc;
 }
-
-input:focus, textarea:focus {
-    border-color: #4facfe;
-    outline: none;
-    box-shadow: 0 0 5px rgba(79,172,254,0.5);
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    min-height: 120px;
+    resize: vertical;
 }
 
 button {
