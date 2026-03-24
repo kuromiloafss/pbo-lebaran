@@ -1,3 +1,4 @@
+// fix error
 <?php
 $result = null;
 
@@ -50,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <textarea name="address" placeholder="Address" required></textarea>
         <button type="submit">Submit</button>
     </form>
-
+    
     <?php if ($result): ?>
         <div class="result">
             <p><strong>Hi, my name is:</strong> <?= $result->getFullName(); ?></p>
