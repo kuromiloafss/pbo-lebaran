@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" name="lastname" placeholder="Last Name" required>
         <input type="text" name="phone" placeholder="Phone Number" required>
         <textarea name="address" placeholder="Address" required></textarea>
-        <button type="submit">Submit</button>
+        <button type="submit" class="btn-progres">Submit Data</button>
     </form>
 
     <?php if ($result): ?>

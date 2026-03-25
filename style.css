@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -15,49 +15,70 @@ body {
 
 .container {
     background: white;
-    padding: 30px;
+    padding: 40px; /* Sedikit lebih lebar kontainernya */
     border-radius: 20px;
-    width: 350px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 400px; /* Kontainer diperlebar sedikit agar tombol lebih leluasa */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 12px;
+    padding: 12px;
+    margin-bottom: 15px;
     border-radius: 10px;
     border: 1px solid #ccc;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-color: #4facfe;
     outline: none;
-    box-shadow: 0 0 5px rgba(79,172,254,0.5);
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
 }
 
-button {
-    width: 100%;
-    padding: 10px;
+/* PERUBAHAN TOMBOL AGAR LEBIH LEBAR DAN BERPROGRES */
+button.btn-progres {
+    width: 100%; /* Lebar maksimal */
+    padding: 15px; /* Lebih tebal dan tinggi */
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     background: linear-gradient(135deg, #4facfe, #00f2fe);
     color: white;
+    font-size: 16px;
     font-weight: bold;
+    text-transform: uppercase; /* Membuat teks lebih tegas */
+    letter-spacing: 1px;
     cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Transisi lebih halus */
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
 }
 
-button:hover {
-    transform: scale(1.05);
+/* Efek Berprogres saat kursor menyentuh tombol */
+button.btn-progres:hover {
+    letter-spacing: 4px; /* Teks seolah melebar/berprogres */
+    background: linear-gradient(
+        135deg,
+        #00f2fe,
+        #4facfe
+    ); /* Warna berbalik halus */
+    box-shadow: 0 6px 20px rgba(79, 172, 254, 0.5);
+    transform: scale(1.02); /* Sedikit membesar keluar kontainer */
+}
+
+button.btn-progres:active {
+    transform: scale(0.98); /* Efek membal saat diklik */
 }
 
 .result {
-    margin-top: 20px;
+    margin-top: 25px;
     background: #f1f9ff;
     padding: 15px;
     border-radius: 10px;
+    border-left: 5px solid #4facfe;
 }
